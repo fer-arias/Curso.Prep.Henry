@@ -95,17 +95,20 @@ function numeroMasGrande(numeros) {
   return mayor;
 }
 
-function multiplicarArgumentos(arguments) {
+function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0
   // Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
+  if (arguments.length === 0) {
+    return 0;
+  }
+  if (arguments.length === 1) {
+    return arguments[0];
+  }
   var multiplicar = 1;
   for ( var i = 0; i < arguments.length; i++) {
     multiplicar = arguments[i] * multiplicar;
-    if (arguments[i] === undefined) {
-      return 0; 
-    }
   }
   return multiplicar;
 }
