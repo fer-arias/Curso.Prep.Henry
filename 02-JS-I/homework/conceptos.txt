@@ -23,3 +23,10 @@ Ej: for (var i = 0; i < 20; i++) {
 
 Operadores Lógicos: Se puede combinar dos expresiones de igualdad y preguntar si alguna de las dos es verdadera, para ésto utilizaremos operadores lógicos.
 Tenemos el operador && (Y), donde ambas expresiones deen ser verdaderas para que el resultado booleano sea true, si ya hay alguna es falsa, no se cumple. A diferencia de ésta operación tenemos la || (ó), donde ya que con una de las expresiones sea positiva va a ser true, sólo dará false, si ambas expresiones son falsas.
+
+Arrays (Matrices): Un arreglo es una lista de contenedor de elementos de diferentes datos. Muchas veces queremos que una variable apunte a diferentes tipo de datos( string, number, boolean), pj si tenemos una variable estudiante y queremos ingresar a un estudiante específico donde tengamos (nombre, apellido, edad, telefono), para ésto utilizamos un arreglo. 
+Para conocer el numero de elementos de una matriz utilizamos .lenth. Para acceder a un elemento de una matriz lo hacemos por su posición númerica (índice) dentro de la misma, el orden en una matriz siempre comienza con 0, el primer elemento estaría en el índice 0. Accedemos a un elemento llamandolo por su índice entre corchetes, ó podemos asignar un nuevo dato llamando por el índice y cambiando el dato.
+También se puede agregar un nuevo elemento al final del arreglo con un .push(nombre), ó se puede eliminar un último elemento con .pop(). Al igual que trabajar sobre el final del array con el push y pop, podemos agregar al principio de la lista con unshift(nombre) y eliminar con shift().
+ Dentro de un array podemos tener diferentes datos, otros arrays dentro del mismo, funciones, y para conocer la cantidad de elementos y cuales son estos podemos utilizar el bucle for.
+
+ 
