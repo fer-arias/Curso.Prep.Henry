@@ -1,0 +1,52 @@
+body {
+    background-image: url("https://envato-shoebox-0.imgix.net/27b8/ee84-1680-4468-bedb-00d4646f4203/pasta20_b272.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=72c8cd9e317d3a722a582409e0bb08f7");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+ 
+
+
+h1 {
+    color: black;
+    border: 1px solid gray;
+    background: gray;
+    
+}
+
+img {
+    width: 400px;
+    
+}
+
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: lightblue;
+    padding: 50px;
+    border: 5px solid #15AAE1;
+    float: right;
+    margin-right: 30px;
+}
+
+#spanId {
+    font-size: 20px;
+    margin: 50px;
+    border: 1px solid gray;
+    background: gray;
+}
+
+div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divClass {
+    font-size: 24px;
+    color: black;
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+}

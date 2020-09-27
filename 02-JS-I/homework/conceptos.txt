@@ -29,4 +29,17 @@ Para conocer el numero de elementos de una matriz utilizamos .lenth. Para accede
 También se puede agregar un nuevo elemento al final del arreglo con un .push(nombre), ó se puede eliminar un último elemento con .pop(). Al igual que trabajar sobre el final del array con el push y pop, podemos agregar al principio de la lista con unshift(nombre) y eliminar con shift().
  Dentro de un array podemos tener diferentes datos, otros arrays dentro del mismo, funciones, y para conocer la cantidad de elementos y cuales son estos podemos utilizar el bucle for.
 
- 
+ Objeto: Los objetos los utilizamos cuando tenemos mucha información sobre una sola cosa, a diferencia de los arrays que pueden contener múltiples elementos relacionados unos con otros. Los objetos se instancian usando llaves ({}), y dentro de las llaves van las propiedades y los valores de las mismas (clave: valor).
+   Propiedades: La propiedad o clave(key) en un objeto es el identificador, éstas no pueden repetirse, son únicas, y los valores que guardamos en esas claves si pueden repetirse y apuntar al mismo valor. Los valores pueden ser distintos tipos de datos (string, number, boolean, function, array).
+   Métodos: Los valores establecidos en funciones y guardadas en un objeto se denominan Métodos, podemos establecer una clave para nombre y el valor para una función.
+   Bucle for...in: Si queremos iterar sobre cada par clave-valor de un objeto utilizamos el for ... in , por cada clave en el objeto tanto. 
+   ej: for (let clave in usuario) {
+     console.log(clave);
+     console.log(usuario[clave]);
+   }
+   Notación de puntos vs notación de corchetes: Se utiliza notación de puntos cuando le paso una clave del objeto y notación de corchetes cuando le paso una expresión que evalua en una clave.
+
+   Prototype: Cada constructor y a su vez función tiene una propieedad llamada prototype, y en ésta se puede expresar propiedades ó métodos los cuales van a ser utilizados por los objetos (instancias) que son creados a partir de ese constructor y que al no encontrar ciertas propiedades dentro de sus propiedades, los van a ir a buscar a su prototipo, y de esa manera no tener que repetir los mismos en cada objeto.
+   Constructor: Para diferenciar un constructor, la primer letra de la palabra del nombre del mismo va con mayúscula, seguido entre paréntesis por los parámetros. Un ejemplo de constructor puede ser Animal, y los objetos gato y perro pueden compartir los valores correr, animal doméstico, etc. Adentro de la función constructor tiene un código, y en éste codigo vamos a tener el this, éste va a puntar al objeto creado cuando se llama al constructor.
+
+   Funciones Callbaback: Capacidad de pasar una función como argumento a otra función, y ésta puede ser llamada cuando desee y  pasar argumentos dentro de la misma.
