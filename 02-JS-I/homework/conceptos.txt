@@ -1,45 +1,174 @@
-Variable: Para definir un determinado dato que luego va a ser utilizado. Una variable puede tener definido un valor como no (si no se define va a apuntar al valor undifined ). Las variables pueden apuntar a un nuevo valor con posterioridad, al no ser que sea una const. 
-Ej: var nombre = "Fernando".
+Variable:
 
-String: Los string son un tipo de dato (valor), una cadena de caracteres, las mismas van entre comillas simples ó dobles.
-Ej: "fernando" / "casa" / "barrio-39".
+Para definir un determinado dato que luego va a ser utilizado. Una
+variable puede tener definido un valor como no (si no se define va a apuntar al
+valor undifined). Las variables pueden apuntar a un nuevo valor con
+posterioridad, al no ser que sea una const. 
 
+  Ej: var nombre = "Fernando".
 
-Funciones: Ya teniendo las variables, necesitamos funciones para calcularlas, modificarlas y hacer cosas con ellas.
-  A la función primero la definimos (con el nombre function), luego le damos un nombre, generalmente que la describa, a continuación le damos una lista de ARGUMENTOS entre parentesis (pueden ir ó no) y deben estar separados por una coma. Y debajo entre llaves ponemos las acciones que querramos que haga (código a ejecutar), aca podemos definir variables, éstas pueden ser utilizadas dentro de ésta función y no para otra ocación.
-  Dentro de la función utilizamos la sentencia return para devolver un valor y terminar la función.
+-------------------------------------------------------------------------------
 
-  
+String:
 
-Valores booleanos (true, false): Los datos booleanos toman esos dos únicos valores, true or false. Los mismos son del tipo de dato primitivo (inmutable), al igual que los strings, numbers, que no se pueden modificar.   
+Los string son un tipo de dato (valor), una cadena de caracteres, las mismas
+van entre comillas simples ó dobles.
 
-Declarciones if: Es un tipo de sentencia que nos ayuda para tomar una decisión, que siempre espera como respuesta un valor booleano (true, false), si no lo es, lo convierte en un valor booleano en base a algunas reglas. Se evalua la expresión, si da como resultado true, se realizan las acciones relacionadas con ese caso dentro del cuerpo definido del if.
+  Ej: "fernando" / "casa" / "barrio39".
 
-For: El bucle for evalua expresiones una y otra vez hasta que devuelve lo que buscamos ó se detiene despues de cierto tiempo. Tienen una sintaxis única, similar a la instrucción if. Primeo tenemos la palabra clave for seguida por paréntesis y luego abrir y cerrar llaves. 
-Dentro de los paréntesis tenemos 3 cosas, declaramos una variable, de la cual serepetirá el bucle. Despues la expresión condicional (hasta cuando se repitirá el bucle, cuando será falsa). Y por último incrementamos la variable (para que ésta por ejemplo no se repita en 0 y se haga un bucle infinito). Las 3 declaraciones van a ir separadas por ;.
-Ej: for (var i = 0; i < 20; i++) {
+-------------------------------------------------------------------------------
+
+Funciones:
+
+Ya teniendo las variables, necesitamos funciones para calcularlas, modificarlas
+y hacer cosas con ellas. A la función primero la definimos (con el nombre
+function), luego le damos un nombre, generalmente que la describa, a
+continuación le damos una lista de ARGUMENTOS entre parentesis (pueden ir ó no)
+y deben estar separados por una coma. Y debajo entre llaves ponemos las
+acciones que querramos que haga (código a ejecutar), aca podemos definir
+variables, éstas pueden ser utilizadas dentro de ésta función y no para otra
+ocación. Dentro de la función utilizamos la sentencia return para devolver un
+valor y terminar la función.
+
+-------------------------------------------------------------------------------
+
+Valores booleanos (true, false):
+
+Los datos booleanos toman esos dos únicos valores, true or false. Los mismos
+son del tipo de valor primitivo (inmutable), al igual que los strings, numbers,
+que no se pueden modificar, si se puede dejar de apuntar a ese valor y apuntar 
+a otro, pero no modificarlos.
+
+-------------------------------------------------------------------------------
+
+Declarciones if:
+
+Es un tipo de sentencia que nos ayuda para tomar una decisión, que siempre
+espera como respuesta un valor booleano (true, false), si no lo es, lo
+convierte en un valor booleano en base a algunas reglas. Se evalua la
+expresión, si da como resultado true, se realizan las acciones relacionadas con
+ese caso dentro del cuerpo definido del if.
+
+-------------------------------------------------------------------------------
+
+For:
+
+El bucle for evalua expresiones una y otra vez hasta que devuelve lo que
+buscamos ó se detiene despues de cierto tiempo. Tienen una sintaxis única,
+similar a la instrucción if. Primeo tenemos la palabra clave for seguida por
+paréntesis y luego abrir y cerrar llaves. 
+Dentro de los paréntesis tenemos 3 cosas, declaramos una variable, de la cual
+se repetirá el bucle. Despues la expresión condicional (hasta cuando se repitirá
+el bucle, cuando será falsa). Y por último incrementamos la variable (para que
+ésta por ejemplo no se repita en 0 y se haga un bucle infinito). Las 3
+declaraciones van a ir separadas por ;.
+
+  Ej: for (var i = 0; i < 20; i++) {
       console.log(i);
-}
+  }
+-------------------------------------------------------------------------------
 
-Operadores Lógicos: Se puede combinar dos expresiones de igualdad y preguntar si alguna de las dos es verdadera, para ésto utilizaremos operadores lógicos.
-Tenemos el operador && (Y), donde ambas expresiones deen ser verdaderas para que el resultado booleano sea true, si ya hay alguna es falsa, no se cumple. A diferencia de ésta operación tenemos la || (ó), donde ya que con una de las expresiones sea positiva va a ser true, sólo dará false, si ambas expresiones son falsas.
+Operadores Lógicos:
 
-Arrays (Matrices): Un arreglo es una lista de contenedor de elementos de diferentes datos. Muchas veces queremos que una variable apunte a diferentes tipo de datos( string, number, boolean), pj si tenemos una variable estudiante y queremos ingresar a un estudiante específico donde tengamos (nombre, apellido, edad, telefono), para ésto utilizamos un arreglo. 
-Para conocer el numero de elementos de una matriz utilizamos .lenth. Para acceder a un elemento de una matriz lo hacemos por su posición númerica (índice) dentro de la misma, el orden en una matriz siempre comienza con 0, el primer elemento estaría en el índice 0. Accedemos a un elemento llamandolo por su índice entre corchetes, ó podemos asignar un nuevo dato llamando por el índice y cambiando el dato.
-También se puede agregar un nuevo elemento al final del arreglo con un .push(nombre), ó se puede eliminar un último elemento con .pop(). Al igual que trabajar sobre el final del array con el push y pop, podemos agregar al principio de la lista con unshift(nombre) y eliminar con shift().
- Dentro de un array podemos tener diferentes datos, otros arrays dentro del mismo, funciones, y para conocer la cantidad de elementos y cuales son estos podemos utilizar el bucle for.
+Se puede combinar dos expresiones de igualdad y preguntar si alguna de las dos
+es verdadera, para ésto utilizaremos operadores lógicos.
+Tenemos el operador && (Y), donde ambas expresiones deben ser verdaderas para
+que el resultado booleano sea true, si alguna es falsa, no se cumple.
+A diferencia de ésta operación tenemos la || (ó), donde ya que con una de las
+expresiones sea positiva va a ser true, sólo dará false, si ambas expresiones
+son falsas.
 
- Objeto: Los objetos los utilizamos cuando tenemos mucha información sobre una sola cosa, a diferencia de los arrays que pueden contener múltiples elementos relacionados unos con otros. Los objetos se instancian usando llaves ({}), y dentro de las llaves van las propiedades y los valores de las mismas (clave: valor).
-   Propiedades: La propiedad o clave(key) en un objeto es el identificador, éstas no pueden repetirse, son únicas, y los valores que guardamos en esas claves si pueden repetirse y apuntar al mismo valor. Los valores pueden ser distintos tipos de datos (string, number, boolean, function, array).
-   Métodos: Los valores establecidos en funciones y guardadas en un objeto se denominan Métodos, podemos establecer una clave para nombre y el valor para una función.
-   Bucle for...in: Si queremos iterar sobre cada par clave-valor de un objeto utilizamos el for ... in , por cada clave en el objeto tanto. 
-   ej: for (let clave in usuario) {
-     console.log(clave);
-     console.log(usuario[clave]);
-   }
-   Notación de puntos vs notación de corchetes: Se utiliza notación de puntos cuando le paso una clave del objeto y notación de corchetes cuando le paso una expresión que evalua en una clave.
+-------------------------------------------------------------------------------
 
-   Prototype: Cada constructor y a su vez función tiene una propieedad llamada prototype, y en ésta se puede expresar propiedades ó métodos los cuales van a ser utilizados por los objetos (instancias) que son creados a partir de ese constructor y que al no encontrar ciertas propiedades dentro de sus propiedades, los van a ir a buscar a su prototipo, y de esa manera no tener que repetir los mismos en cada objeto.
-   Constructor: Para diferenciar un constructor, la primer letra de la palabra del nombre del mismo va con mayúscula, seguido entre paréntesis por los parámetros. Un ejemplo de constructor puede ser Animal, y los objetos gato y perro pueden compartir los valores correr, animal doméstico, etc. Adentro de la función constructor tiene un código, y en éste codigo vamos a tener el this, éste va a puntar al objeto creado cuando se llama al constructor.
+Arrays (Matrices):
 
-   Funciones Callbaback: Capacidad de pasar una función como argumento a otra función, y ésta puede ser llamada cuando desee y  pasar argumentos dentro de la misma.
+Un arreglo es una lista de contenedor de elementos de diferentes datos. Muchas
+veces queremos que una variable apunte a diferentes tipo de datos( string,
+number, boolean), pj si tenemos una variable estudiante y queremos ingresar a
+un estudiante específico donde tengamos (nombre, apellido, edad, telefono),
+para ésto utilizamos un arreglo. 
+Para conocer el numero de elementos de una matriz utilizamos .length. Para
+acceder a un elemento de una matriz lo hacemos por su posición númerica
+(índice) dentro de la misma, el orden en una matriz siempre comienza con 0, el
+primer elemento estaría en el índice 0. Accedemos a un elemento llamandolo por
+su índice entre corchetes, ó podemos asignar un nuevo dato llamando por el
+índice y cambiando el dato.
+También se puede agregar un nuevo elemento al final del arreglo con un
+.push(nombre), ó se puede eliminar un último elemento con .pop(). Al igual que
+trabajar sobre el final del array con el push y pop, podemos agregar al
+principio de la lista con unshift(nombre) y eliminar con shift().
+Dentro de un array podemos tener diferentes datos, otros arrays dentro del
+mismo, funciones, y para conocer la cantidad de elementos y cuales son estos
+podemos utilizar el bucle for.
+
+-------------------------------------------------------------------------------
+
+Objeto: 
+ 
+Los objetos los utilizamos cuando tenemos mucha información sobre una sola
+cosa, a diferencia de los arrays que pueden contener múltiples elementos
+relacionados unos con otros. Los objetos se instancian usando llaves ({}), y
+dentro de las llaves van las propiedades y los valores de las mismas
+(clave: valor).
+
+-------------------------------------------------------------------------------
+
+Propiedades:
+
+La propiedad o clave(key) en un objeto es el identificador, éstas no pueden
+repetirse, son únicas, y los valores que guardamos en esas claves si pueden
+repetirse y apuntar al mismo valor. Los valores pueden ser distintos tipos de
+datos (string, number, boolean, function, array).
+
+-------------------------------------------------------------------------------
+
+Métodos:
+
+Los valores establecidos en funciones y guardadas en un objeto se denominan
+Métodos, podemos establecer una clave para nombre y el valor para una función.
+
+-------------------------------------------------------------------------------
+
+Bucle for...in: Si queremos iterar sobre cada par clave-valor de un objeto
+utilizamos el for ... in , por cada clave en el objeto tanto. 
+   
+  ej: for (let clave in usuario) {
+      console.log(clave);
+      console.log(usuario[clave]);
+  }
+
+-------------------------------------------------------------------------------
+
+Notación de puntos vs notación de corchetes:
+
+Se utiliza notación de puntos cuando le paso una clave del objeto y notación de
+corchetes cuando le paso una expresión que evalua en una clave.
+
+-------------------------------------------------------------------------------
+
+Prototype:
+
+Cada constructor y a su vez función tiene una propiedad llamada prototype, y
+en ésta se puede expresar propiedades ó métodos los cuales van a ser utilizados
+por los objetos (instancias) que son creados a partir de ese constructor y que
+al no encontrar ciertas propiedades dentro de sus propiedades, los van a ir a
+buscar a su prototipo, y de esa manera no tener que repetir los mismos en cada
+objeto.
+
+-------------------------------------------------------------------------------
+
+Constructor:
+
+Para diferenciar un constructor, la primer letra de la palabra del nombre del
+mismo va con mayúscula, seguido entre paréntesis por los parámetros. Un ejemplo
+de constructor puede ser Animal, y los objetos gato y perro pueden compartir
+los valores correr, animal doméstico, etc. Adentro de la función constructor
+tiene un código, y en éste codigo vamos a tener el this, éste va a puntar al
+objeto creado cuando se llama al constructor.
+
+-------------------------------------------------------------------------------
+
+Funciones Callback:
+
+Capacidad de pasar una función como argumento a otra función, y ésta puede ser
+llamada cuando desee y  pasar argumentos dentro de la misma.

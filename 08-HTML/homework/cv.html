@@ -1,143 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Curriculum Vitae</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
 </head>
+
 <body>
     <style>
-        .contenedor > header {
-            text-align: center;
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+        :root {
+            --bg-color: #faeddf;
+            --bg-color-verde: #198597;
+            --txt-color: #7a5932;
+            --fuente-principal: "Montserrat";
+            --fuente-secundaria: "Roboto";
         }
 
-        .contenedor {
-            margin: 0 auto;
-            width: 900px;
+        body {
+            background-color: var(--bg-color);
+            color: var(--txt-color);
+            font-family: var(--fuente-principal), sans-serif;
+            line-height: 30px;
+            margin: 0;
         }
 
-        .foto-perfil img {
-            height: 200px;
-            border-radius: 250px;
+        h1, h2 {
+            font-weight: 200;
+            letter-spacing: -2px;
         }
 
         h1 {
-            color: #155C76;
-        }
-
-        .contacto > span > img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .contacto > span {
-            margin-right: 50px;
-        }
-        
-
-        p {
-            font-size: 22px;
-        }
-
-        .contacto {
-            font-size: 22px;
-            color: #17A2D5;
-        }
-
-        .contenedor > section {
-            margin-top: 45px;
+            font-size: 50px;
+            line-height: 50px;
         }
 
         h2 {
-            color: #155C76;
+            font-size: 40px;
+            line-height: 40px;
+            background-color: var(--bg-color-verde);
+            margin: 0;
+            padding: 20px 0;
             text-align: center;
-            text-shadow: 1px 1px 2px;
-        }
-
-        ul > li {
-            font-size: 19px;
+            color: var(--bg-color);
         }
     </style>
-    <div class="contenedor">
-        <header>
-            <div class="foto-perfil">
-                <img src="foto-Fernando.jpg"/>
-            </div>
-            <h1>FERNANDO <strong>ARIAS</strong></h1>
-            <div class="contacto">
-                <span>
-                    <img src="https://img.icons8.com/color/2x/phone.png">
-                    <img src="https://img.icons8.com/color/2x/whatsapp.png">
-                    +5492235417822
-                </span>
-                <span>
-                    <img src="https://img.icons8.com/nolan/2x/new-post.png">
-                    fernando.andres.arias@gmail.com
-                </span>
-            </div>
-            <p>
-                Mi afición por la cultura y en concreto por el cine, me sirven para ofrecer un trato agradable a
-                los clientes, ya sea desde acomodador, a vendedor en el candy, o responsable de recoger
-                entradas o de venderlas en boletería. Poseo experiencia en todas estas áreas, habiendo
-                trabajado tanto en importantes y reconocidos cines, como así también en ventas y atención al
-                público en hoteles y comercios. Me mantengo al día en las últimas tecnologías y soy muy
-                eficiente en la entrada de datos y operaciones en general.  
-            </p>
-        </header>
-        <section>
-            <h2>SKILLS</h2>
-            <ul>
-                <li>
-                    Supervisión y registro de entradas, y otras tareas en piso, candy, o boletería, con el enfoque
-    puesto en la calidad y cortesía.
-                </li>
-                <li>
-                    Funciones diversas de contabilidad, como ciertos pagos, recibir cobros y auditorías.
-                </li>
-                <li>
-                    Intermediate English, operador de PC y desarrollador software, excelente presencia.
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>EXPERIENCIA</h2>
-            <ul>
-                <li>
-                    <strong>2002-2005</strong> | Brisas del Mar | Empresa de Turismo y viajes | Atención al Cliente, Ventas,
-    Administración y Coordinación | Av. 74 y 49, Necochea, Buenos Aires.
-                </li>
-                <li>
-                    <strong>2005-2010</strong> | Distribuidora Millanel Cosmética | Encargado y dueño distribuidora Mar del
-    Plata | Área de Ventas, Administración, Stock, Impuestos | Calle Córdoba 1747, primer piso,
-    local 59, Mar del Plata, Buenos Aires.
-                </li>
-                <li>
-                    <strong>2010-2012</strong> | Village Cines | Personal de piso | Sedes Avellaneda y Recoleta
-                </li>
-                <li>
-                    <strong>2015-2017</strong> | Hotel La Posada | Recepcionista, Atención a huéspedes, Impuestos | Calle 85
-    N°368, Necochea, Buenos Aires | Teléfono +5402262525533
-                </li>
-                <li>
-                    <strong>2015-Actualidad</strong> | Corredor recibido y trabajando de forma independiente
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>ESTUDIOS</h2>
-            <ul>
-                <li>
-                    <strong>2003-2006</strong> | Técnico Superior en Administración Contable | Hilet College | Mar del Plata,
-    Buenos Aires | Cursada completa, debiendo 6 finales.
-                </li>
-                <li>
-                    <strong>2010-2013</strong> | Martillero, Tasador y Corredor Público | CIA (Cámara Inmobiliaria Argentina) |
-    Capital Federal | Recibido
-                </li>
-                <li>
-                    <strong>2016-Actualidad</strong> | Licenciado en Informática | Universidad Siglo XXI | Mar del Plata, Buenos
-    Aires | Cursando
-                </li>
-            </ul>
-        </section>
-    </div>
-  </body>
+
+    <header>
+        <img src="foto-fernando.jpg">
+        <h1>
+            Hola,<br>
+            soy Fernando<br>
+            Arias
+        </h1>
+        <p>
+            Trabajé varios años como agente inmobiliario, pero mi afición
+            por la programación y el querer aprender más, me llevaron a
+            afrontar una nueva meta: convertirme en desarrollador de software.
+            Una profesión que siempre me gustó, y me interesa profundizar.
+            Empecé estudios formales en el area, pero no los finalicé debido al
+            tiempo que le dedicaba a mis anteriores trabajos. Pero hoy dispongo
+            del tiempo para enfocarme de lleno en éste nuevo camino.
+        </p>
+    </header>
+    <section>
+        <h2>Educación</h2>
+        <ul>
+            <li>
+                2003-2006
+                Técnico Superior en Administración Contable
+                Hilet College
+                Mar del Plata, Buenos Aires
+                Cursada completa, debiendo 6 finales
+            </li>
+            <li>
+                2010-2013
+                Martillero, Tasador y Corredor Público
+                CIA (Cámara Inmobiliaria Argentina)
+                Capital Federal
+                Recibido
+            </li>
+            <li>
+                2016-2018
+                Licenciado en Informática
+                Universidad Siglo XXI
+                Mar del Plata, Buenos Aires
+                Cursada incompleta
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Experiencias Laborales</h2>
+        <ul>
+            <li>
+                2002-2005
+                Brisas del Mar
+                Empresa de Turismo y viajes
+                Atención al Cliente, Ventas, Administración y Coordinación
+                Av. 74 y 49, Necochea
+            </li>
+            <li>
+                2005-2010
+                Distribuidora Millanel Cosmética
+                Encargado y dueño distribuidora Mar del Plata
+                Área de Ventas, Administración, Stock, Impuestos
+                Calle Córdoba 1747, primer piso, local 59, Mar del Plata
+            </li>
+            <li>
+                2010-2012
+                Village Cines
+                Personal de piso
+                Sedes Avellaneda y Recoleta
+            </li>
+            <li>
+                2015-2017
+                Hotel La Posada
+                Recepcionista, Atención a huéspedes, Impuestos
+                Calle 85 N°368, Necochea
+            </li>
+            <li>
+                2015-2017
+                Corredor recibido y trabajando de forma independiente
+            </li>
+            <li>
+                2017-2020
+                RE/MAX Arena
+                Agente Inmobiliario
+                Calle Lamadrid 3243, Mar del Plata
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                Ventas
+            </li>
+            <li>
+                Administración Contable
+            </li>
+            <li>
+                Corretaje y Tasación Inmobiliaria
+            </li>
+            <li>
+                Inglés
+            </li>
+            <li>
+                HTML y CSS
+            </li>
+            <li>
+                Javascript
+            </li>
+            <li>
+                Node.js
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Hobbies</h2>
+        <p>
+            Disfruto de la naturaleza. Vivo en Sierra de los Padres, un lugar
+            rodeado de verde y hermosos paisajes. Me gusta salir a caminar,
+            correr, y disfrutar de la gastronnomía local. Convivo con una
+            pequeña perrita, llamada Coka, con la cual disfrutamos de caminatas
+            juntos.
+        </p>
+    </section>
+    <section>
+        <h2>Henry</h2>
+        <p>
+            Me encuentro actualmente preparándome para ingresar al bootcamp de
+            Herny, donde aprenderé sobre programación con JavaScript y
+            desarrollo web con HTML y CSS. Mi objetivo es poder trabajar y
+            vivir de ésto, e ir ampliando mis conocimientos y experiencia,
+            con el tiempo.
+        </p>
+    </section>
+</body>
+
 </html>

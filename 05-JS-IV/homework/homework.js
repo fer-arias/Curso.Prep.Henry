@@ -7,17 +7,14 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
  var objeto = {
-nombre: nombre,
-edad: edad,
-meow: function() {
-  return "Meow!";
+   nombre: nombre,
+   edad: edad,
+   meow: function() {
+     return "Meow!"
+   }
+ }
+ return objeto;
 }
-  }
-return objeto;
-}
-
-
-
 
 function agregarPropiedad(objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
@@ -110,11 +107,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Cada objeto "usuario" tiene la propiedad "esPremium"
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
-  
   for (var i = 0; i < usuarios.length; i++) {
     usuarios[i].esPremium = true;
   }
-
   return usuarios;
 }
 
